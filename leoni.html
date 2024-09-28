@@ -1,0 +1,141 @@
+<style>
+    .hero {
+        background-image: url('https://via.placeholder.com/1920x800');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .hero h1 {
+        font-size: 4rem;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    }
+    .product-card {
+        transition: transform 0.3s ease;
+    }
+    .product-card:hover {
+        transform: scale(1.05);
+    }
+    footer {
+        background-color: #343a40;
+        color: white;
+        padding: 20px 0;
+    }
+</style>
+</head>
+<body>
+
+<!-- En-tête (Header) -->
+<header class="bg-light py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a href="#" class="navbar-brand">Boutique</a>
+        <nav class="d-none d-md-block">
+            <ul class="list-inline mb-0">
+                <li class="list-inline-item"><a href="#" class="text-dark">Accueil</a></li>
+                <li class="list-inline-item"><a href="#" class="text-dark">Produits</a></li>
+                <li class="list-inline-item"><a href="#" class="text-dark">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Menu mobile -->
+        <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</header>
+
+<!-- Menu mobile collapsible -->
+<div class="collapse" id="mobileMenu">
+    <ul class="list-group">
+        <li class="list-group-item"><a href="#">Accueil</a></li>
+        <li class="list-group-item"><a href="#">Produits</a></li>
+        <li class="list-group-item"><a href="#">Contact</a></li>
+    </ul>
+</div>
+
+<!-- Section Héros (Hero) -->
+<section class="hero">
+    <div class="container text-center">
+        <h1>Découvrez notre nouvelle collection</h1>
+        <p class="lead">Des offres incroyables pour une durée limitée</p>
+        <a href="#" class="btn btn-primary btn-lg">Achetez maintenant</a>
+    </div>
+</section>
+
+<!-- Section Produits -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Nos Produits</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://via.placeholder.com/400x400" class="card-img-top" alt="Produit 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Produit 1</h5>
+                        <p class="card-text">Description du produit 1.</p>
+                        <a href="#" class="btn btn-outline-primary">Voir le produit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://via.placeholder.com/400x400" class="card-img-top" alt="Produit 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Produit 2</h5>
+                        <p class="card-text">Description du produit 2.</p>
+                        <a href="#" class="btn btn-outline-primary">Voir le produit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://via.placeholder.com/400x400" class="card-img-top" alt="Produit 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Produit 3</h5>
+                        <p class="card-text">Description du produit 3.</p>
+                        <a href="#" class="btn btn-outline-primary">Voir le produit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Témoignages (Social proof) -->
+<section class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Ce que disent nos clients</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <blockquote class="blockquote">
+                    <p>"Produit incroyable, service rapide!"</p>
+                    <footer class="blockquote-footer">Marie Dupont</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-4">
+                <blockquote class="blockquote">
+                    <p>"Je suis très satisfaite de mon achat."</p>
+                    <footer class="blockquote-footer">Jean Martin</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-4">
+                <blockquote class="blockquote">
+                    <p>"Je recommande cette boutique à 100%!"</p>
+                    <footer class="blockquote-footer">Sophie Tremblay</footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pied de page (Footer) -->
+<footer>
+    <div class="container text-center">
+        <p>&copy; 2024 Boutique - Tous droits réservés.</p>
+        <p><a href="#" class="text-light">Politique de confidentialité</a> | <a href="#" class="text-light">Mentions légales</a></p>
+    </div>
+</footer>
+

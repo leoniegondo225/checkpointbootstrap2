@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../image/hero1.jpg);
+    background-repeat: no-repeat;
+    color: #fff;
+    position: relative;
+    margin-bottom: 50px;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+.texte-violet {
+    color: rgb(117, 79, 254);
+    border-bottom: 3px solid rgb(245 158 11);
+}
+.taille {
+    font-size: 3.rem;
+    color: blueviolet;
+}
+/*On diminue la taille sur les mobile et les tablettes */
+@media (max-width: 768px) {
+    .taille-h1 {
+        font-size: 2rem;
+    }
+}
+
+.choix {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: .9rem;
+}
+
+.product-card {
+    transition: transform 0.3s ease;
+}
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.texte-ROSE {
+    color: rgb(250, 60, 225);
+    border-bottom: 3px solid rgb(46, 11, 245);
+}
+
+footer {
+    background-color: #1b6dbe;
+    color: white;
+    padding: 20px 0;
+}
